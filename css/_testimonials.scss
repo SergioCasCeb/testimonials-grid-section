@@ -1,0 +1,95 @@
+.testimonials {
+    padding: var(--sp-xxlg) 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, minmax(0, fit-content));
+    grid-template-areas:
+        "testimonial-1"
+        "testimonial-2"
+        "testimonial-3"
+        "testimonial-4"
+        "testimonial-5";
+    gap: var(--sp-lg);
+
+    .testimonial {
+        border-radius: 10px;
+        padding: var(--sp-xlg);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: var(--sp-m);
+
+        &__user {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: var(--sp-m);
+
+            img {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+            }
+
+            .name {
+                letter-spacing: 0.5px;
+            }
+
+            .description {
+                font-size: var(--fs-xsm);
+            }
+        }
+
+        &__summary {
+            font-size: var(--fs-xlg);
+            line-height: var(--lh-title);
+        }
+
+        &__quote {
+            line-height: var(--lh-body);
+        }
+    }
+
+    .testimonial-1 {
+        grid-area: testimonial-1;
+    }
+
+    .testimonial-2 {
+        grid-area: testimonial-2;
+    }
+
+    .testimonial-3 {
+        grid-area: testimonial-3;
+    }
+
+    .testimonial-4 {
+        grid-area: testimonial-4;
+    }
+
+    .testimonial-5 {
+        grid-area: testimonial-5;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .testimonials {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, minmax(0, fit-content));
+        grid-template-areas:
+            "testimonial-1 testimonial-2"
+            "testimonial-1 testimonial-3"
+            "testimonial-4 testimonial-4"
+            "testimonial-5 testimonial-5";
+    }
+}
+
+@media screen and (min-width: 67.5rem) {
+    .testimonials {
+        grid-template-columns: repeat(4, minmax(0, 16rem));
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "testimonial-1 testimonial-1 testimonial-2 testimonial-5"
+            "testimonial-3 testimonial-4 testimonial-4 testimonial-5";
+    }
+}
