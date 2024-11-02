@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-testimonial-section-with-scss-and-grid-WJP6g-iHyP)
 - Live Site URL: [Netlify](https://fm-testimonial-section-challenge.netlify.app/)
 
 ## My process
