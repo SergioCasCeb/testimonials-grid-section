@@ -229,7 +229,7 @@ footer a {
   font-size: var(--fs-xsm);
 }
 .testimonials .testimonial__summary {
-  font-size: var(--fs-xlg);
+  font-size: var(--fs-lg);
   line-height: var(--lh-title);
 }
 .testimonials .testimonial__quote {
